@@ -1,0 +1,50 @@
+p {
+    font-family: serif;
+    font-size: 14pt;
+    margin-top: 0pt;
+    margin-bottom: 8pt;
+    margin-left: 3em;
+    margin-right: 3em;
+    color: #333;
+}
+ol {
+    font-family: serif;
+    font-size: 14pt;
+    margin-top: 0pt;
+    margin-bottom: 8pt;
+    margin-left: 3em;
+    margin-right: 3em;
+    color: #333;
+}
+h1 {
+    font-size: 24pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #2b61be;
+}
+h3 {
+    font-size: 18pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24pt;
+    margin-bottom: 8pt;
+    margin-left: 5em;
+    margin-right: 5em;
+    color: #2b61be;
+}
+img {
+    max-width: 600px;
+    margin-top: 8pt;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+.ris {
+    font-family: serif;
+    font-size: 12pt;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0pt;
+    margin-bottom: 24pt;
+}
