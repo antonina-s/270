@@ -1,0 +1,72 @@
+p {
+    font-family: sans-serif;
+    font-size: 14pt;
+    margin-top: 0pt;
+    margin-bottom: 8pt;
+    margin-left: 48pt;
+    margin-right: 48pt;
+    color: #333;
+}
+ol {
+    font-family: sans-serif;
+    font-size: 14pt;
+    margin-top: 0pt;
+    margin-bottom: 8pt;
+    margin-left: 48pt;
+    margin-right: 48pt;
+    color: #333;
+}
+ul {
+    font-family: sans-serif;
+    font-size: 14pt;
+    margin-top: 0pt;
+    margin-bottom: 8pt;
+    margin-left: 48pt;
+    margin-right: 48pt;
+    color: #333;
+}
+h1 {
+    font-size: 24pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #7c2bbe;
+}
+h3 {
+    font-size: 17pt;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 24pt;
+    margin-bottom: 8pt;
+    margin-left: 48pt;
+    margin-right: 48pt;
+    color: #7c2bbe;
+}
+img {
+    max-width: 800px;
+    margin-top: 8pt;
+    margin-left: 48pt;
+    margin-right: 48pt;
+}
+.ris {
+    font-family: sans-serif;
+    font-size: 12pt;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0pt;
+    margin-bottom: 24pt;
+}
+b {
+    color: #7c2bbe;
+}
+.cap {
+    float: left;
+    margin: 0 8pt 8pt 0;
+}
+body {
+    background: #f6d8ff;
+    background: -webkit-linear-gradient(#e0eeff, #f6d8ff);
+    background:    -moz-linear-gradient(#e0eeff, #f6d8ff);
+    background:         linear-gradient(#e0eeff, #f6d8ff);
+}
