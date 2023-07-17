@@ -1,0 +1,54 @@
+body {
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin: 40px 0;
+}
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0 0 90px 0;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+.button {
+    display: inline-block;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 35px;
+    padding: 18px 25px;
+    transition-duration: 5ms;
+}
+.button:hover {
+    box-shadow: 0 0 10px 0 hsl(0, 0%, 95%);
+}
+.flex-conteiner {
+    display: flex;
+    min-width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.block-1 {
+    padding: 50px;
+}

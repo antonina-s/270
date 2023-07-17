@@ -1,0 +1,204 @@
+body {
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(224, 232, 255);
+    background-blend-mode: darken;
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    color: hsl(223, 47%, 23%);
+}
+h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    text-align: left;
+    color: hsl(223, 47%, 23%);
+    margin: 0;
+}
+h4 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    color: hsl(224, 23%, 55%);
+    padding-top: 5px;
+    margin: 0;
+}
+h5 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.4;
+    color: hsl(224, 23%, 55%);
+}
+a {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: right;
+    color: hsl(245, 75%, 52%);
+}
+a:hover {
+    color: rgb(117, 237, 202);
+}
+
+
+
+.flex-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 25px 30px 0 rgb(198, 207, 246);
+}
+.all-blocks {
+    display: inline-block;
+}
+.img-block {
+    display: block;
+}
+.text-blocks {
+    display: block;
+    width: 380px;
+    padding: 35px;
+}
+.summary {
+    display: block;
+}
+
+.a-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 25px 25px 20px 25px;
+    margin: 25px 0;
+}
+.a-plan .a-img {
+    display: inline;
+}
+.a-plan .a-y {
+    display: inline;
+    margin-top: -5px;
+    padding-right: 95px;
+}
+.a-plan .a-change {
+    display: inline;
+}
+
+/* Через div и ссылку. */
+.pay {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    width: 380px;
+    box-shadow: 0 10px 25px 0 rgb(198, 207, 246);
+}
+.pay-but {
+    padding: 20px 0; 
+}
+.pay:hover {
+    color: hsl(245, 75%, 52%);
+    background-color: rgb(117, 237, 202);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.pay:active {
+    color: hsl(245, 75%, 52%);
+    background-color: rgb(117, 237, 202);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transform: translateY(2px);
+}
+.pay-but:hover {
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
+}
+.pay-but:active {
+    color: hsl(245, 75%, 52%);
+    text-decoration: none;
+}
+
+/* Через значение кнопки. */
+.button-pay {
+    display: block;
+    border-radius: 15px;
+}
+.but-pay-big {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 15px;
+    padding: 20px 0;
+    width: 380px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 10px 25px 0 rgb(198, 207, 246);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.but-pay-big:hover {
+    color: hsl(245, 75%, 52%);
+    background-color: rgb(117, 237, 202);
+    box-shadow: 0 10px 25px 0 hsl(245, 75%, 52%);
+    border: none;
+    outline: none;
+}
+.but-pay-big:active {
+    color: hsl(245, 75%, 52%);
+    background-color: rgb(117, 237, 202);
+    box-shadow: 0 10px 25px 0 rgb(117, 237, 202);
+    border: none;
+    outline: none;
+    transform: translateY(2px);
+}
+.but-pay-big:visited {
+    background-color: hsl(224, 23%, 55%);
+    border: none;
+    outline: none;
+}
+
+.cancel {
+    display: block;
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+.cancel a {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+}
+.cancel a:hover {
+    color: hsl(245, 75%, 52%);
+}
