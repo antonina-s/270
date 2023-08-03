@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style_grid.css">
+    <title>Neria Katz | Gallery</title>
+
+    <script type="text/javascript" src="js/jquery-3.7.0.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="menu-top">
+        <div class="menu-line-grid">
+            <div class="top-left">
+                <h1>NERIA KATZ</h1>
+            </div>
+            <div class="but-a-about">
+                <a href="about_grid.html"><h2>About</h2></a>
+            </div>
+            <div class="but-a-resume">
+                <a href="resume.html"><h2>Resume</h2></a>
+            </div>
+            <div class="but-a-gallery">
+                <a href="gallery.html"><h2>Gallery</h2></a>
+            </div>
+            <div class="but-a-certificates">
+                <a href="certificates.html"><h2>Certificates</h2></a>
+            </div>
+            <div class="but-a-contact">
+                <a href="mailto:antonina.s.703@outlook.com"><h2>Contact</h2></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="text-right-gallery">
+        <div class="gallery-big">
+            <div class="img-gallery">
+                <img src="images/img-1.jpg">
+            </div>
+            <div class="img-gallery">
+                <img src="images/img-2.jpg">
+            </div>
+            <div class="img-gallery">
+                <img src="images/img-3.jpg">
+            </div>
+            <div class="img-gallery">
+                <img src="images/img-4.jpg">
+            </div>
+            <div class="img-gallery">
+                <img src="images/img-5.jpg">
+            </div>
+            <div class="img-gallery">
+                <img src="images/img-6.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-gallery">
+        <div class="but-a-close-gal">
+            <a href="#"><h2>Close</h2></a>
+        </div>
+        <img src="" alt="">
+    </div>
+
+    <!-- jQuery -->
+    <script type="text/javascript">
+        $('.img-gallery img').click(function() {
+            let src = $(this).attr('src');
+            $('.modal-gallery img').attr('src',src);
+            $('.modal-gallery').fadeIn();    
+        });
+
+        $('.but-a-close-gal').click(function() {
+            $('.modal-gallery').fadeOut();
+        });
+
+        $(document).ready(function($) {
+            // Клик по кнопке "OK".
+            $('.but-a-close-gal').click(function() {
+                $(this).parents('.modal-gallery').fadeOut();
+                return false;
+            });
+            // Закрытие по клавише Esc.
+            $(document).keydown(function(e) {
+                if (e.keyCode === 27) {
+                    e.stopPropagation();
+                    $('.modal-gallery').fadeOut();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
