@@ -1,5 +1,5 @@
 # LABS
-LABS – Frontend Developer
+Лаболаторные – Frontend Developer
 
 HTML, CSS, JavaScript
 
