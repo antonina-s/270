@@ -1,5 +1,5 @@
 # ЗАЧЕТ
-ЗАЧЕТ – Frontend Developer
+Зачёты – Frontend Developer
 
 Файлы зачётов
 
