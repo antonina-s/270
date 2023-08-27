@@ -1,0 +1,2600 @@
+* {
+    color: #ffffff;
+    box-sizing: border-box;
+}
+/* Подключаем свои шрифты. */
+@font-face {
+    font-family: Europa;
+    src: url(fonts/Europa-Sans/europa-regular-webfont.ttf) format(truetype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Europa Bold;
+    src: url(fonts/Europa-Sans/europa-bold-webfont.ttf) format(truetype);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Ogg;
+    src: url(fonts/Ogg-Serif/Ogg-Roman.otf) format(opentype);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Ogg Italic;
+    src: url(fonts/Ogg-Serif/Ogg-Italic.otf) format(opentype);
+    font-weight: normal;
+}
+/* @font-face {
+    font-family: The Seasons;
+    src: url(fonts/The-Seasons-Hand/TheSeasons-It.otf) format(opentype);
+    font-weight: normal;
+} */
+@font-face {
+    font-family: Material Symbols Outlined;
+    font-style: normal;
+    font-weight: 100 700;
+    src: url(https://fonts.gstatic.com/s/materialsymbolsoutlined/v132/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsLjBuVY.woff2) format(woff2);
+}
+
+body {
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+/* &nbsp; */
+
+
+h1 {
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.h1-red-italic {
+    font-family: Ogg Italic;
+    font-weight: normal;
+    text-transform: none;
+    color: #E52329;
+    padding: 0 0 0.75rem 0;
+    margin: 0;
+}
+h2 {
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 3.125rem;
+    text-align: left;
+    line-height: 4.375rem;
+    text-transform: uppercase;
+    padding: 0 0 0 25%;
+    margin: 0;
+}
+.h2-red-italic {
+    font-family: Ogg Italic;
+    font-weight: normal;
+    line-height: 2.5rem;
+    text-transform: none;
+    color: #E52329;
+    padding: 0 0 0 25%;
+    margin: 0;
+}
+h2-left {
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 3.125rem;
+    text-align: left;
+    line-height: 3.125rem;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+.h2-black-italic {
+    font-family: Ogg Italic;
+    font-weight: normal;
+    line-height: 2.5rem;
+    text-transform: none;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+h3 {
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 1.563rem;
+    text-align: left;
+    line-height: 2rem;
+    text-transform: none;
+    padding: 0;
+    margin: 0.938rem 0 0.625rem 0;
+}
+.h3-red-italic {
+    font-family: Ogg Italic;
+    font-weight: normal;
+    text-transform: none;
+    color: #E52329;
+}
+h4 {
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 1.563rem;
+    text-align: center;
+    line-height: 1.875rem;
+    text-transform: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+.h4-red-italic {
+    font-family: Ogg Italic;
+    font-weight: normal;
+    text-transform: none;
+    color: #E52329;
+}
+/* Свой тег для выравнивания влево. */
+h4-left {
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 1.563rem;
+    text-align: center;
+    line-height: 1.75rem;
+    text-transform: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+.h4-red-italic-left {
+    font-family: Ogg Italic;
+    font-weight: normal;
+    text-transform: none;
+    color: #E52329;
+}
+h5 {
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 1.063rem;
+    text-align: left;
+    line-height: 1.063rem;
+    text-transform: none;
+    padding: 0;
+    margin: 0.625rem 0 1.563rem 0;
+}
+/* h5:hover {
+    color: #E52329;
+    cursor: pointer;
+} */
+h5-red {
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 1.063rem;
+    text-align: right;
+    line-height: 1.063rem;
+    text-transform: none;
+    color: #E52329;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: Europa;
+    font-weight: normal;
+    font-size: 0.813rem;
+    line-height: 0.938rem;
+}
+a {
+    font-size: 0.813rem;
+    line-height: 0.938rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.a-in-p {
+    font-family: Europa Bold;
+    font-weight: bold;
+    font-size: 0.813rem;
+    line-height: 0.938rem;
+    text-transform: none;
+    color: #E52329;
+    /* padding: 0; */
+    cursor: pointer;
+}
+.a-in-p:hover {
+    letter-spacing: 0;
+    text-transform: none;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.094rem;
+}
+/* Новый тег для ссылки more. */
+a-more {
+    font-family: Europa;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 0.813rem;
+    letter-spacing: 0rem;
+    text-transform: none;
+    /* color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    cursor: pointer; */
+}
+/* a-more:hover {
+    color: #E52329;
+    border-bottom: 2px solid #E52329;
+} */
+.a-more-a {
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 0.125rem solid #ffffff;
+    padding-bottom: 0.313rem;
+    cursor: pointer;
+}
+.a-more-a:hover {
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+}
+ul {
+    font-family: Europa;
+    font-weight: normal;
+    font-size: 0.813rem;
+    line-height: 0.938rem;
+    padding-left: 1rem;
+}
+li {
+    color: #E52329;
+}
+li span {
+    color: #ffffff;
+}
+/* .ul-red-dot {
+    list-style-type: disc;
+    list-style-type: url('images/pics/dot_red.svg');
+} */
+/* ul {
+    font-family: Europa;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li {
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: -16px;
+}
+li::before {
+    content: "•";
+    padding-right: 10px;
+    color: #E52329;
+} */
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+/* Шапка меню. */
+header {
+    /* Фиксируем шапку. */
+    position: fixed;
+    z-index: 9999;
+    background-color: #000000;
+    padding: 1.563rem 0 1.563rem 0;
+
+    width: 100%;
+    height: auto;
+    /* margin: 40px 0 80px 0; */
+}
+.header-container-grid {
+    display: grid;
+    grid-template-columns: 10.625rem 31.25rem 8.125rem;
+    grid-template-rows: auto;
+    justify-content:space-between;
+    align-items: top;
+    gap: 0;
+    width: 90%;
+    height: 3.125rem;
+    margin: auto;
+}
+.header-left {
+    width: 10.625rem;
+    height: auto;
+}
+.header-left-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Через grid. */
+.header-menu-grid {
+    display: grid;
+    grid-template-columns: 2.313rem 5.125rem 4.125rem 4rem 2.125rem;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 2.188rem;
+    width: 31.25rem;
+    height: 3.125rem;
+}
+
+.menu-p {
+    font-family: Europa;
+    font-weight: normal;
+    font-size: 0.813rem;
+    line-height: 0.906rem;
+    text-align: center;
+    color: #ffffff;
+}
+.a-header-red-line {
+    letter-spacing: 0rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.a-header-red-line:hover {
+    font-family: Europa Bold;
+    font-weight: bold;
+    letter-spacing: -0.013rem;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+.a-header-red-line:active {
+    font-family: Europa Bold;
+    font-weight: bold;
+    letter-spacing: -0.019rem;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+/* .a-header-red-line:visited {
+    color: #b9b8b8;
+} */
+/* CSS hack для Chrome. */
+/* @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .a-header-red-line:hover {
+        font-weight: bold;
+        letter-spacing: 0px;
+        border-bottom: 2px solid #E52329;
+        padding-bottom: 5px;
+    }
+    .a-header-red-line:active {
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #E52329;
+        border-bottom: 2px solid #E52329;
+        padding-bottom: 5px;
+    }
+} */
+.a-header-red-line-page {
+    font-family: Europa Bold;
+    font-weight: bold;
+    letter-spacing: -0.013rem;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+    cursor: pointer;
+}
+.a-header-red-line-page:hover {
+    letter-spacing: -0.013rem;
+    /* color: #ffffff; */
+}
+
+.header-right {
+    display: grid;
+    grid-template-columns: 1.063rem 0.5rem 0.5rem;
+    grid-template-rows: auto;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    column-gap: 0;
+    width: 9.375rem;
+    height: 3.125rem;
+}
+
+/* Иконки Google Fonts. */
+/* .material-symbols-outlined {
+    font-size: 20px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+.material-symbols-outlined:hover {
+    color: #E52329;
+    font-variation-settings:
+    'wght' 700
+} */
+
+.menu-sym {
+    font-family: Material Symbols Outlined;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.063rem;
+    line-height: 0.906rem;
+    text-align: center;
+    color: #E52329;
+}
+.a-header-red-line-sym {
+    font-family: Material Symbols Outlined;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.063rem;
+    line-height: 0.906rem;
+    text-align: center;
+    /* color: #ffffff; */
+    text-decoration: none;
+    cursor: pointer;
+}
+.a-header-red-line-sym:hover {
+    font-family: Material Symbols Outlined;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.013rem;
+    font-size: 1.063rem;
+    line-height: 0.906rem;
+    text-align: center;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+.a-header-red-line-sym-page {
+    font-family: Material Symbols Outlined;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.063rem;
+    line-height: 0.906rem;
+    text-align: center;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+
+/* Шапка сайта через гамбургер. */
+.header-hamburger {
+    display: none;
+}
+
+.menu-text {
+    position: fixed;
+    top: 2.3%;
+    /* left: 67%; */
+    right: 25%;
+    bottom: 0;
+    z-index: 99;
+    /* Спрячем с экрана раскрывающееся меню. */
+    /* transform: translateX(300%); */
+    transform: translateY(-300%);
+    /* transition: transform 0.1s; */
+    text-align: center;
+    list-style: none;
+    width: 12.5rem;
+    height: 16.875rem;
+    border: 0.156rem solid #E52329;
+    background-color: #000000;
+    /* padding-top: 4rem; */
+    padding: 3% 0 0 0;
+}
+.header-red-line {
+    font-family: Europa;
+    font-weight: normal;
+    font-size: 0.813rem;
+    line-height: 2.5;
+    /* text-align: center; */
+    letter-spacing: 0rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+.header-red-line:hover {
+    font-family: Europa Bold;
+    font-weight: bold;
+    letter-spacing: -0.023rem;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+.header-red-line-page {
+    font-family: Europa Bold;
+    font-weight: bold;
+    font-size: 0.813rem;
+    line-height: 2.5;
+    letter-spacing: -0.023rem;
+    text-decoration: none;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+    cursor: pointer;
+}
+
+.menu-hamburger {
+    position: fixed;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background: none;
+    top: 1.5rem;
+    right: 2rem;
+    cursor: pointer;
+}
+.pic-img {
+    width: 3.125rem;
+    height: auto;
+    background: none;
+}
+.menu-icon {
+    display: block;
+}
+.close-icon {
+    display: none;
+}
+
+/* Для JavaScript. */
+.show-menu {
+    transform: translate(20%, -4%);
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////// */
+/* Блок. */
+.section-1 {
+    width: auto;
+    height: 58.438rem;
+    padding-top: 9.688rem;
+    margin-bottom: 5.938rem;
+}
+.section-1-exhibitions {
+    width: auto;
+    height: auto;
+    padding-top: 9.688rem;
+    margin-bottom: 3.438rem;
+}
+.section-1-collection {
+    width: auto;
+    height: 38.75rem;
+    padding-top: 9.688rem;
+    margin-bottom: 19.375rem;
+}
+.section-1-about {
+    width: auto;
+    height: auto;
+    padding-top: 9.688rem;
+    margin-bottom: 3.438rem;
+}
+.section-1-tickets {
+    width: auto;
+    height: 31.875rem;
+    padding-top: 9.688rem;
+    margin-bottom: 3.438rem;
+}
+.section-1-shop {
+    width: auto;
+    height: auto;
+    padding-top: 9.688rem;
+    margin-bottom: 3.438rem;
+}
+
+.section-block-container {
+    /* Через position. */
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+/* .section-circle-img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+} */
+.section-text {
+    position: relative;
+    z-index: 3;
+    margin: auto;
+}
+.section-circle {
+    position: absolute;
+    width: 100%;
+    height: 38.75rem;
+    top: 85%;
+}
+.section-img {
+    position: absolute;
+    width: 100%;
+    height: 37.5rem;
+    top: 65%;
+}
+.section-20-img {
+    position: absolute;
+    width: 100%;
+    /* Если не активно меню левое, то может высота img не та. */
+    height: 34.375rem;
+    top: 65%;
+}
+
+.section-block-img {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: block;
+    width: 36.875rem;
+    height: auto;
+    margin: auto;
+}
+.img-t-1 {
+    width: 36.875rem;
+    height: 37.5rem;
+    background: url('images/screenshots/Judith_low_tiny.jpg') no-repeat left / cover;
+}
+
+.section-block-tav-img {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: block;
+    width: 21.875rem;
+    height: 28.125rem;
+    margin: auto;
+}
+.img-tav-1 {
+    width: 21.875rem;
+    height: 28.125rem;
+    border-radius: 45% 45% 0 0;
+    background: url('images/arts/5712_tiny.jpg') no-repeat bottom / cover;
+}
+
+/* Форма овала через border-radius. */
+.section-block-circles {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.circles-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0rem;
+}
+
+.circle-l-1 {
+    width: 6.25rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    /* Подрезаем фото под общий размер. */
+    background: url('images/arts/4881-2020-4___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: 0rem;
+}
+.circle-l-2 {
+    width: 9.375rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4881-2020-4___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -6.25rem;
+}
+.circle-m-3 {
+    width: 14.063rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4881-2020-4___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -15.625rem;
+}
+.circle-r-4 {
+    width: 15.625rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4881-2020-4___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -29.688rem;
+}
+.circle-r-5 {
+    width: 18.125rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4881-2020-4___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -45.313rem;
+}
+
+/* Вторая картина. */
+.circles-flex-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0rem;
+}
+.circle-2-l-1 {
+    width: 6.25rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4825___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: 0rem;
+}
+.circle-2-l-2 {
+    width: 9.375rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4825___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -6.25rem;
+}
+.circle-2-m-3 {
+    width: 14.063rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4825___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -15.625rem;
+}
+.circle-2-r-4 {
+    width: 15.625rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4825___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -29.688rem;
+}
+.circle-2-r-5 {
+    width: 18.125rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/4825___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -45.313rem;
+}
+
+/* Третья картина. */
+.circles-flex-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0rem;
+}
+.circle-3-l-1 {
+    width: 6.25rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/6247___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: 0rem;
+}
+.circle-3-l-2 {
+    width: 9.375rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/6247___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -6.25rem;
+}
+.circle-3-m-3 {
+    width: 14.063rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/6247___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -15.625rem;
+}
+.circle-3-r-4 {
+    width: 15.625rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/6247___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -29.688rem;
+}
+.circle-3-r-5 {
+    width: 18.125rem;
+    height: 38.75rem;
+    border-radius: 60%;
+    background: url('images/arts/6247___crop_tiny.jpg') no-repeat left / cover;
+    background-position-x: -45.313rem;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Красная кнопка. */
+.section-2 {
+    position: relative;
+    z-index: 4;
+    width: 11.875rem;
+    height: 8.125rem;
+    padding: 0.625rem 0 0 0;
+    margin: auto;
+}
+.section-2-left {
+    position: relative;
+    z-index: 4;
+    width: 11.875rem;
+    height: 8.125rem;
+    padding: 2.188rem 0 0 0;
+    margin: -7% 0 0 3%;
+}
+
+.section-2 a {
+    text-decoration: none;
+}
+
+.section-2-container {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    width: 11.25rem;
+    height: 6.25rem;
+    margin: auto;
+    cursor: pointer;
+}
+.section-2-container:hover {
+    transform: translate(0.125rem, 0.125rem);
+}
+.section-2-container:active {
+    transform: translate(0.188rem, 0.188rem);
+}
+
+.section-2-a-text-white {
+    position: relative;
+    z-index: 99;
+    /* % не работают. */
+    top: 2.3rem;
+    right: 0.2rem;
+}
+
+.circles {
+    position: relative;
+    z-index: 88;
+    width: 11.875rem;
+    height: 6.25rem;
+    margin: auto;
+    top: -2rem;
+}
+.white-circle {
+    position: absolute;
+    z-index: 80;
+    width: 11.25rem;
+    height: 5.938rem;
+    border: 0.094rem solid #ffffff;
+    border-radius: 60%;
+    transform: rotate(-32deg);
+}
+/* .white-circle:hover {
+    transform: rotate(-42deg);
+} */
+.red-circle {
+    position: absolute;
+    z-index: 70;
+    width: 11.25rem;
+    height: 6.25rem;
+    background-color: #E52329;
+    border-radius: 60%;
+    transform: rotate(-12deg);
+}
+/* .red-circle:hover {
+    transform: rotate(-22deg);
+} */
+
+/* Чёрно-белая кнопка. */
+.section-2-bw {
+    position: relative;
+    z-index: 4;
+    width: 11.875rem;
+    height: 8.125rem;
+    padding: 2.188rem 0 0 0;
+    margin: auto;
+}
+.section-2-bw a {
+    text-decoration: none;
+}
+
+.section-2-bw-container {
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    width: 11.25rem;
+    height: 6.25rem;
+    margin: auto;
+    cursor: pointer;
+}
+.section-2-bw-container:hover {
+    transform: translate(0.125rem, 0.125rem);
+}
+.section-2-bw-container:active {
+    transform: translate(0.188rem, 0.188rem);
+}
+
+.section-2-bw-a-text-white {
+    position: relative;
+    z-index: 99;
+    /* % не работают. */
+    top: 2.3rem;
+    right: 0.2rem;
+}
+
+.circles-bw {
+    position: relative;
+    z-index: 88;
+    width: 11.875rem;
+    height: 6.25rem;
+    margin: auto;
+    top: -2rem;
+}
+.black-circle-bw {
+    position: absolute;
+    z-index: 80;
+    width: 11.25rem;
+    height: 5.938rem;
+    border: 0.094rem solid #000000;
+    border-radius: 60%;
+    transform: rotate(-32deg);
+}
+.red-circle-bw {
+    position: absolute;
+    z-index: 70;
+    width: 11.25rem;
+    height: 6.25rem;
+    border: 0.094rem solid #E52329;
+    /* background-color: #E52329; */
+    border-radius: 60%;
+    transform: rotate(-12deg);
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок музея сегодня. */
+.section-3 {
+    display: block;
+    width: 100%;
+    margin-top: 7.813rem;
+}
+.section-3 p {
+    color: #7f7f7f;
+    padding: 0;
+    margin: 0;
+}
+.section-3 a {
+    text-decoration: none;
+}
+/* .section-3-today-container h3 a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #E52329;
+    padding-bottom: 5px;
+} */
+
+.section-3-today-container {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    justify-content: center;
+    align-items: start;
+    column-gap: 3.438rem;
+    row-gap: 3.438rem;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 3.438rem;
+}
+
+.grid-left-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.grid-left-img-1 {
+    width: 18.75rem;
+    height: 15.625rem;
+    background: url('images/screenshots/Judith_low_tiny.jpg') no-repeat top / cover;
+    margin: 0 0 0.75rem 0;
+}
+
+.grid-left-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grid-left-img-2 {
+    width: 18.75rem;
+    height: 15.625rem;
+    background: url('images/screenshots/Philharmonic_tiny.jpg') no-repeat center / cover;
+    margin: 0 0 0.75rem 0;
+}
+
+.grid-right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.grid-right-img {
+    width: 34.375rem;
+    height: 31.25rem;
+    background: url('images/screenshots/Allegorie_tiny.jpg') no-repeat center / cover;
+    margin: 0 0 0.75rem 0;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Про выставки. */
+.section-1-exhibitions {
+    width: auto;
+    height: auto;
+    margin-bottom: 4.375rem;
+}
+
+.section-3-exhibitions-top-menu {
+    width: 90%;
+    height: 3.125rem;
+    border-top: 0.031rem solid #000000;
+    border-bottom: 0.031rem solid #000000;
+    padding: 0.938rem 0;
+    margin: auto;
+}
+.s-3-e-top-menu-grid {
+    display: grid;
+    grid-template-columns: 1.875rem 2.5rem 1.875rem;
+    grid-template-rows: auto;
+    justify-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 3.438rem;
+    width: 14.375rem;
+    height: 1.25rem;
+    margin: auto;
+}
+
+.section-3-exhibitions {
+    display: block;
+    width: 100%;
+    margin-top: 5.313rem;
+}
+.section-3-exhibitions-block {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.section-3-exhibitions-container {
+    width: 100%;
+    height: auto;
+    margin: 3.438rem 0 0 0;
+}
+.section-3-exhibitions-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section-3-exhibitions-container h3 {
+    padding: 0;
+    margin: -0.125rem 0 0 0;
+}
+
+.s-3-e-flex-imgs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4.688rem;
+    width: 100%;
+    height: auto;
+    margin: 0 0 2.188rem 0;
+}
+
+.s-3-e-img-oval {
+    width: 22.5rem;
+    height: 26.875rem;
+    border-radius: 60%;
+    object-fit: cover;
+}
+.s-3-e-img-oval-big {
+    width: 49.688rem;
+    height: 26.875rem;
+    border-radius: 60%;
+    object-fit: cover;
+}
+.s-3-e-img-oval-big-big {
+    width: 76.875rem;
+    height: 26.875rem;
+    border-radius: 60%;
+    object-fit: cover;
+}
+.s-3-e-img-square {
+    width: 22.5rem;
+    height: 26.875rem;
+    object-fit: cover;
+}
+.s-3-e-img-radius {
+    width: 22.5rem;
+    height: 26.875rem;
+    border-radius: 0 70% 0 0;
+    object-fit: cover;
+}
+.s-3-e-img-radius-big {
+    width: 49.688;
+    height: 26.875rem;
+    border-radius: 0 0 65% 0;
+    object-fit: cover;
+}
+
+.s-3-e-flex-text {
+    width: 21rem;
+    height: auto;
+    margin: 0 0 0.75rem 0;
+}
+.s-3-e-flex-text-big {
+    width: 40.625rem;
+    height: auto;
+    margin: 0 0 0.75rem 0;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок про цифровые технологии. */
+.section-4 {
+    width: 100%;
+    height: auto;
+    margin-top: 9.688rem;
+    margin-bottom: 5.938rem;
+}
+.section-4 ul {
+    padding: 0 0 0 1.063rem;
+    margin: 0;
+}
+.section-4-container {
+    width: 75%;
+    height: auto;
+    padding: 0 0 0 25%;
+    margin-top: 3.438rem;
+    margin-bottom: 3.438rem;
+}
+
+.section-4-block-img {
+    width: 40.625rem;
+    height: 15.625rem;
+    background: url('images/photos/3_NFT_presentation_photo_Ouriel\ Morgensztern_Belvedere_Vienna_0_0_tiny.jpg') no-repeat left / cover;
+    margin-bottom: 1.75rem;
+}
+
+.section-4-block-text {
+    width: 75%;
+    height: auto;
+    padding: 0 15% 0 0;
+}
+
+.section-4-container-circels {
+    /* position: relative; */
+    width: 90%;
+    height: auto;
+    margin-top: 4.375rem;
+    margin: auto;
+}
+/* .circles-digital-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 25px;
+} */
+.circles-digital-grid {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    column-gap: 1.563rem;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+/* .circle-digital {
+    display: inline;
+} */
+.circle-digital-1 {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.circle-digital-1-img {
+    width: 13.75rem;
+    height: 16.25rem;
+    border-radius: 60%;
+    background: url('images/photos/1E6A0451_2_tiny_opacity55.jpg') no-repeat left / cover;
+    /* background-color: #000000;
+    opacity: 40%; */
+}
+.circle-digital-1-img:hover {
+    border: 0.125rem solid #E52329;
+}
+.circle-digital-2 {
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.circle-digital-2-img {
+    width: 13.75rem;
+    height: 16.25rem;
+    border-radius: 60%;
+    background: url('images/photos/PB190062_tiny_opacity55.jpg') no-repeat center / cover;
+}
+.circle-digital-2-img:hover {
+    border: 0.125rem solid #E52329;
+}
+.circle-digital-3 {
+    position: relative;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.circle-digital-3-img {
+    width: 13.75rem;
+    height: 16.25rem;
+    border-radius: 60%;
+    background: url('images/photos/nachlass_tiny_opacity55.jpg') no-repeat center / cover;
+}
+.circle-digital-3-img:hover {
+    border: 0.125rem solid #E52329;
+}
+.circle-digital-4 {
+    position: relative;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.circle-digital-4-img {
+    width: 13.75rem;
+    height: 16.25rem;
+    border-radius: 60%;
+    background: url('images/photos/BEL_Sammlung_20200930_OurielMorgensztern_167_tiny_opacity55.jpg') no-repeat center / cover;
+}
+.circle-digital-4-img:hover {
+    border: 0.125rem solid #E52329;
+}
+.circle-digital-5 {
+    position: relative;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.circle-digital-5-img {
+    width: 13.75rem;
+    height: 16.25rem;
+    border-radius: 60%;
+    background: url('images/photos/IMG_0984_tiny_opacity55.jpg') no-repeat right / cover;
+}
+.circle-digital-5-img:hover {
+    border: 0.125rem solid #E52329;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок с расписанием. */
+.section-5 {
+    width: 100%;
+    height: auto;
+    margin-top: 9.688rem;
+    margin-bottom: 3.438rem;
+}
+
+.section-5-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-top: 3.438rem;
+}
+.section-5-row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.188rem;
+    border-top: 0.031rem solid #ffffff;
+    padding: 0.938rem 0;
+}
+
+.section-5-p-gray {
+    color: #7f7f7f;
+    padding: 0;
+    margin: 0;
+}
+.section-5-p-white {
+    text-align: right;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.s-5-l-1 {
+    width: 4.7%;
+    padding-top: 1.313rem;
+}
+.s-5-l-2 {
+    width: 13%;
+}
+
+.s-5-r-3 {
+    width: 17%;
+}
+.s-5-r-4 {
+    width: 13%;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Расписание 21 в выставках. */
+.section-5-exhibitions {
+    width: 100%;
+    height: auto;
+    margin-top: 9.688rem;
+    margin-bottom: 9.688rem;
+}
+.section-5-container-exhibitions {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 3.438rem;
+}
+.section-5-exhibitions-row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.25rem;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border-top: 0.031rem solid #7f7f7f;
+    padding: 1.563rem 0;
+}
+.section-5-exhibitions-row-flex-img-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.25rem;
+    width: 100%;
+    height: auto;
+    border-top: 0.031rem solid #7f7f7f;
+    background: url('images/screenshots/Alois-Mosbacher_02_tiny_opacity55.jpg') no-repeat center / cover;
+    background-size: 100%;
+    /* filter: brightness(50%); */
+    /* opacity: 50%; */
+    padding: 1.563rem 5%;
+}
+.s-5-e-l-1 {
+    width: 20%;
+}
+.s-5-e-r-1 {
+    width: 60%;
+}
+
+.section-5-exhibitions-row-flex-img-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.25rem;
+    width: 100%;
+    height: auto;
+    border-top: 0.031rem solid #7f7f7f;
+    background: url('images/screenshots/Friedrich_Kiesler_–_Walter_Pichler_tiny_opacity55_crop.jpg') no-repeat center / cover;
+    background-size: 100%;
+    /* filter: brightness(50%); */
+    /* opacity: 50%; */
+    padding: 1.563rem 5%;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок про коллекции. */
+.section-5-container-collections {
+    width: auto;
+    height: auto;
+    margin: auto;
+    /* padding-top: 55px; */
+    padding-left: 22.5%;
+}
+.section-5-container-collections-grid {
+    display: grid;
+    grid-template-columns: 15.625rem 15.625rem 15.625rem;
+    grid-template-rows: 21.875rem 21.875rem;
+    column-gap: 5.313rem;
+    row-gap: 0.938rem;
+    justify-items:flex-start;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+.s-5-c-top-3 {
+    width: 16.875rem;
+    height: 21.875rem;
+    border-radius: 55%;
+    background: url('images/arts/Francis_II\,_Holy_Roman_Emperor_by_Friedrich_von_Amerling_003_tiny_.jpg') no-repeat center / cover;
+}
+.s-5-c-bottom-1 {
+    width: 16.875rem;
+    height: 21.875rem;
+    background: url('images/arts/622_Mourning_Schiele_1965_tiny.jpg') no-repeat center / cover;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок про общественность. */
+.section-6 {
+    width: 100%;
+    height: auto;
+    margin-top: 9.688rem;
+    margin-bottom: 3.438rem;
+}
+
+.section-6-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 3.75rem;
+    flex-wrap: nowrap;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: flex-start;
+    column-gap: 55px; */
+    width: 90%;
+    height: auto;
+    padding-top: 3.438rem;
+    margin: auto;
+}
+
+.flex-left-program {
+    width: auto;
+}
+.flex-left-program-img {
+    margin: 0 0 0.75rem 0;
+}
+.flex-left-program-img img {
+    width: 100%;
+    height: 180%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flex-right-community {
+    width: auto;
+}
+.flex-right-community-img {
+    margin: 0 0 0.75rem 0;
+}
+.flex-right-community-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.flex-text-program {
+    width: 29.375rem;
+    height: auto;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Красный блок. */
+.section-7 {
+    width: 100%;
+    height: auto;
+    background-color: #E52329;
+    padding: 3.125rem 0;
+    margin-top: 9.688rem;
+}
+.section-7-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.section-7-container img {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 60%;
+}
+.section-7-container img:hover {
+    transform: translate(0.125rem, 0.125rem);
+}
+
+.section-7-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.125rem;
+    width: 100%;
+    margin: auto;
+    margin: 1.25rem 0;
+}
+.s-7-block-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+    width: 40%;
+}
+.s-7-adress {
+    width: 20%;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок текстовой в коллекциях. */
+.section-8 {
+    width: 100%;
+    height: auto;
+    padding: 3.125rem 0;
+    margin-top: 6.25rem;
+}
+.section-8-container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.section-8-top-left {
+    width: auto;
+    height: auto;
+    margin-right: 50%;
+}
+
+.section-8-flex {
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 55px; */
+    display: grid;
+    grid-template-columns: 45% 50%;
+    grid-template-rows: auto;
+    align-items: center;
+    column-gap: 3rem;
+    width: auto;
+    height: auto;
+    border-top: 0.031rem solid #7f7f7f;
+    padding: 3.438rem 0;
+    margin-top: 2.5rem;
+    margin-left: 22%;
+}
+.s-8-block-text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: auto;
+    height: auto;
+    margin-right: 3.438rem;
+}
+.s-8-a-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    justify-items: center;
+    width: auto;
+    height: auto;
+    margin-top: 2.188rem;
+}
+
+.s-8-block-img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 28.125rem;
+    height: 28.125rem;
+    border-radius: 55%;
+    background: url('images/arts/Ferdinand_Georg_Waldmüller_-_Selbstporträt_in_jungen_Jahren_1828_tiny.jpg') no-repeat center / cover;
+    background-size: 100%;
+}
+.section-8-lines {
+    width: auto;
+    height: auto;
+    margin-left: 22%;
+}
+.s-8-lines-row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6.25rem;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-top: 0.031rem solid #7f7f7f;
+    padding: 0.938rem 0;
+}
+
+.section-8-grid-a-r {
+    display: grid;
+    grid-template-columns: 31.25rem 37.5rem;
+    grid-template-rows: auto;
+    column-gap: 3.438rem;
+    row-gap: 2.188rem;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    margin-top: 6.25rem;
+    width: auto;
+    height: auto;
+    border-top: 0.031rem solid #7f7f7f;
+    border-bottom: 0.031rem solid #7f7f7f;
+    padding: 0.938rem 0;
+}
+.section-8-grid-a-r p {
+    padding-right: 25%;
+}
+.section-8-grid-a-r-img {
+    display: grid;
+    grid-template-columns: 31.25rem 37.5rem;
+    grid-template-rows: auto;
+    column-gap: 3.438rem;
+    row-gap: 2.188rem;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    width: auto;
+    height: auto;
+    margin-top: 1.563rem;
+}
+.s-8-block-a-r-img-1 {
+    width: 31.25rem;
+    height: 43.75rem;
+    background: url('images/screenshots/Egon_Schile_01_tiny.jpg') no-repeat center / cover;
+    margin-top: 0.938rem;
+}
+.s-8-block-a-r-img-2 {
+    width: 37.5rem;
+    height: 25rem;
+    background: url('images/screenshots/Egon_Schile_02_tiny.jpg') no-repeat center / cover;
+    margin-top: 0.938rem;
+}
+
+.section-8-grid-c-c {
+    display: grid;
+    grid-template-columns: 7.188rem 25rem 34.375rem;
+    grid-template-rows: auto;
+    justify-content: flex-start;
+    /* justify-items: flex-start; */
+    column-gap: 3.438rem;
+    width: auto;
+    height: auto;
+    margin-top: 4.375rem;
+}
+.s-8-block-c-c-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.s-8-block-c-c-img-1 {
+    width: 25rem;
+    height: 28.125rem;
+    background: url('images/screenshots/Marina-Faust_tiny.jpg') no-repeat center / cover;
+    margin-bottom: 0.938rem;
+}
+.s-8-block-c-c-2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.s-8-block-c-c-2 p {
+    padding-right: 20%;
+}
+.s-8-block-c-c-img-2 {
+    width: 34.375rem;
+    height: 18.75rem;
+    background: url('images/screenshots/In-Sight_01_tiny.jpg') no-repeat center / cover;
+    margin-bottom: 0.938rem;
+}
+
+.section-8-flex-bk {
+    display: grid;
+    grid-template-columns: 7.188rem 43.75rem;
+    grid-template-rows: auto auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 3.438rem;
+    row-gap: 3.438rem;
+    width: auto;
+    height: auto;
+    padding: 0;
+    padding-left: 22.2%;
+    margin-top: 4.375rem;
+}
+.section-8-flex-bk h3 {
+    padding: 0;
+    margin: 0;
+}
+.section-8-flex-bk p {
+    padding-right: 15%;
+}
+.s-8-block-f-bk-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.s-8-block-f-bk-img-1 {
+    width: 45rem;
+    height: 21.875rem;
+    background: url('images/photos/505Z-1-Blickle.jpg') no-repeat center / cover;
+    margin-bottom: 0.938rem;
+}
+.s-8-block-f-bk-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.s-8-block-f-bk-2 p {
+    padding-right: 20%;
+}
+iframe {
+    margin-bottom: 0.625rem;
+}
+.s-8-block-f-bk-img-2 {
+    width: 38.75rem;
+    height: 26.25rem;
+    background: url('images/photos/UBVA.jpg') no-repeat center / cover;
+    margin-bottom: 0.938rem;
+}
+
+.section-8-map-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.438rem;
+    width: auto;
+    height: auto;
+    border-top: 0.031rem solid #7f7f7f;
+    padding: 2.5rem 0;
+    margin-top: 2.5rem;
+    margin-left: 22%;
+}
+.s-8-map-text p {
+    padding: 0.438rem 0 0.938rem 0;
+    margin: 0;
+}
+.s-8-map-img {
+    width: 40.625rem;
+    height: 40.625rem;
+    background: url('images/Plan_Map_OB_0_curves.svg') no-repeat center / cover;
+    background-size: 100%;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* О музее. */
+.section-9 {
+    width: 100%;
+    height: auto;
+    margin-top: 6.25rem;
+}
+.section-9-grid-a {
+    display: grid;
+    grid-template-columns: 20rem 37.5rem;
+    grid-template-rows: auto auto auto;
+    column-gap: 2.188rem;
+    row-gap: 1.25rem;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    width: auto;
+    height: auto;
+}
+.s-9-block-a-img-1 {
+    justify-self: flex-end;
+    align-self: flex-end;
+    width: 12.5rem;
+    height: 18.75rem;
+    border-radius: 45% 45% 0 0;
+    background: url('images/screenshots/Adele_Bloch-Bauer_I_tiny.jpg') no-repeat center / cover;
+}
+.s-9-block-a-img-2 {
+    width: 50rem;
+    height: 28.125rem;
+    background: url('images/photos/Exhibition_room_in_Schloss_Belvedere_tiny.jpg') no-repeat top / cover;
+}
+.section-9-row-grid {
+    display: grid;
+    grid-template-columns: 40% 55%;
+    grid-template-rows: auto auto auto;
+    column-gap: 3.438rem;
+    row-gap: 0rem;
+    justify-content: center;
+    justify-items: left;
+    width: auto;
+    height: auto;
+    border-top: 0.031rem solid #ffffff;
+    padding: 1.563rem 6.25rem 1.563rem 0;
+}
+
+.section-9-grid-h {
+    display: grid;
+    grid-template-columns: 25rem 37.5rem;
+    grid-template-rows: auto auto auto;
+    column-gap: 3.438rem;
+    row-gap: 3.438rem;
+    justify-content: flex-start;
+    justify-items: flex-start;
+    width: auto;
+    height: auto;
+    margin-left: 22.5%;
+}
+.s-9-block-h-img-1 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 25rem;
+    height: 15.625rem;
+    border-radius: 55%;
+    background: url('images/arts/Eugene_of_Savoy_full_tiny.jpg') no-repeat center / cover;
+}
+.s-9-block-h-text {
+    width: 75%;
+    height: auto;
+}
+.s-9-block-h-img-2 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 25rem;
+    height: 15.625rem;
+    background: url('images/photos/281215-_DSC1495_Foto_Lukas_Schaller_tiny.jpg') no-repeat bottom / cover;
+}
+.s-9-block-h-img-3 {
+    justify-self: flex-start;
+    align-self: flex-start;
+    width: 25rem;
+    height: 15.625rem;
+    background: url('images/screenshots/austria-belvedere-garden-and-palace-vienna_tiny.jpg') no-repeat bottom / cover;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Меню левое. */
+.section-20 {
+    width: 100%;
+    height: auto;
+    margin-top: 19.375rem;
+    margin-bottom: 9.688rem;
+}
+/* .section-20-container {
+    display: grid;
+    grid-template-columns: 20% 77.5%;
+    grid-template-rows: 1fr;
+    column-gap: 2.5%;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.menu-left {
+    width: auto;
+    height: auto;
+} */
+
+.section-5-menu-right {
+    width: 100%;
+    height: auto;
+}
+.section-5-menu-right-container {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+/* Через вкладку. */
+.section-20-container-tab {
+    position: relative;
+    width: 90%;
+    height: 21.875rem;
+    margin: auto;
+    /* margin-left: 25%; */
+}
+.s-20-tab {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+input[type="radio"] {
+    display: none;
+}
+.tab-title {
+    display: inline-block;
+    font-family: Ogg;
+    font-weight: normal;
+    font-size: 1.063rem;
+    text-align: left;
+    line-height: 1.063rem;
+    text-transform: none;
+    color: #ffffff;
+    width: 12.5rem;
+    padding: 0;
+    margin-bottom: 2.188rem;
+}
+.tab-title:hover {
+    color: #E52329;
+}
+
+.s-20-tab :checked + .tab-title {
+    position: relative;
+    z-index: 1;
+    color: #E52329;
+}
+.s-20-tab :checked ~ .tab-content {
+    display: block;
+}
+
+.tab-content {
+    position: absolute;
+    display: none;
+    width: 78%;
+    height: auto;
+    padding: 1.875rem 0 0 0;
+    background-color: #000000;
+    transform: translate(50%, -50%);
+}
+#s-20-tab-ub {
+    transform: translate(28%, -25.5%);
+}
+#s-20-tab-lb {
+    transform: translate(28%, -30.5%);
+}
+#s-20-tab-b21 {
+    transform: translate(28%, -49%);
+}
+#s-20-tab-gs {
+    transform: translate(28%, -72%);
+}
+
+
+
+.section-5-menu-right-row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10%;
+    width: 100%;
+    height: auto;
+    border-top: 0.031rem solid #ffffff;
+    padding: 0.938rem 0;
+}
+.s-20-l {
+    width: 30%;
+    text-align: left;
+}
+.s-20-r {
+    width: 10%;
+    text-align: right;
+}
+
+.s-20-h2 {
+    padding: 0;
+    margin: 0 0 3.438rem -0.5rem;
+}
+
+.s-20-text-tmp {
+    position: absolute;
+    display: inline;
+    width: 50%;
+    height: auto;
+    transform: translate(50%, -15%);
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок дополнительной информации. */
+.section-20-info-container {
+    width: 90%;
+    height: auto;
+    padding: 3.125rem 0 3.125rem 20%;
+    margin: auto;
+}
+/* .s-20-info-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-items: flex-start;
+    align-items: flex-start;
+    column-gap: 35px;
+    row-gap: 35px;
+} */
+.s-20-info-grid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 3.438rem;
+}
+.s-20-info-flexingrid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+.s-20-info-grid-text {
+    width: 25rem;
+    padding: 0 10% 0 0;
+}
+.s-20-info-grid-img-1 {
+    width: 25rem;
+    height: 20rem;
+    background: url('images/arts/2081_tiny.jpg') no-repeat center / cover;
+    margin-top: 1.875rem;
+}
+.s-20-info-grid-img-2 {
+    width: 28.125rem;
+    height: 23.75rem;
+    background: url('images/arts/6068_tiny.jpg') no-repeat center / cover;
+    margin-top: 1.875rem;
+}
+
+.s-20-info-flex-block {
+    width: 40.625rem;
+    height: auto;
+    margin-top: 3.438rem;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок про еду. */
+/* .section-20-rest-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: left;
+    column-gap: 55px;
+    width: 90%;
+    height: auto;
+    padding-left: 25%;
+    margin-top: 95px;
+} */
+.section-20-rest-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 3.438rem;
+    width: 90%;
+    height: auto;
+    padding-left: 25%;
+    margin-top: 5.938rem;
+}
+.s-20-rest-block-1 {
+    width: 26.875rem;
+    height: 37.5rem;
+    background: url('images/arts/onemillion_belvedere_03_tiny_opacity60.jpg') no-repeat center / cover;
+}
+.s-20-rest-block-2 {
+    width: 26.875rem;
+    height: 37.5rem;
+    background: url('images/arts/Schloss_Belvedere_Galadinner_tiny_opacity60.jpg') no-repeat center / cover;
+}
+.s-20-rest-gridinblock {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 2.5rem;
+    align-content:space-between;
+    /* align-items; */
+    width: 100%;
+    height: 37.5rem;
+    padding: 0.938rem 1.25rem 1.563rem 1.25rem;
+}
+.s-20-rest-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.625rem;
+    border-top: 0.031rem solid #ffffff;
+    padding: 0.438rem 0;
+}
+.s-20-l-1 {
+    display: inline-block;
+    width: 8%;
+    /* height: 10%; */
+    /* padding-top: 17px; */
+}
+.s-20-m-2 {
+    text-align: left;
+    width: 30%;
+}
+.s-20-m-2 a:hover {
+    text-decoration: none;
+    color: #E52329;
+}
+.s-20-r-3 {
+    text-align: right;
+    width: 39%;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Блок правил. */
+.section-20-rules-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 3.438rem;
+    row-gap: 2.813rem;
+    width: 90%;
+    height: auto;
+    padding-top: 3.438rem;
+    margin: auto;
+    margin-top: 3.438rem;
+}
+
+.s-20-row-grid {
+    border-top: 0.031rem solid #ffffff;
+    padding: 0.938rem 0.625rem 0.938rem 0;
+}
+
+/* .section-20-container p {
+    padding-right: 15%;
+}
+.s-20-row-grid ul {
+    padding: 0 15% 0 6px;
+    margin: 14px 0 0 9px;
+}
+.s-20-row-grid li {
+    padding: 0;
+    margin-left: 0;
+} */
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Магазин. */
+.section-21 {
+    width: 100%;
+    height: auto;
+    margin-top: 9.688rem;
+    margin-bottom: 9.688rem;
+}
+.section-21-container {
+    /* display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr auto auto auto;
+    column-gap: 55px;
+    row-gap: 35px;
+    justify-content: start;
+    align-content: end; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.section-21-block-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    gap: 2.188rem;
+    margin-top: 2.188rem;
+}
+
+/* .section-21-also-block-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 35px;
+    width: 67%;
+    margin: auto;
+    margin-top: 35px;
+} */
+
+.s-21-block-text-big {
+    width: 21.875rem;
+    height: auto;
+    margin-top: 1.25rem;
+}
+.s-21-block-text {
+    width: 15.625rem;
+    height: auto;
+    margin-top: 1.25rem;
+}
+.s-21-block-img-1 {
+    width: 23.75rem;
+    height: 21.875rem;
+    border-radius: 50% 50% 0 0;
+    background: url('shop/images/IMG_6995.JPG') no-repeat center / cover;
+}
+.s-21-block-img-2 {
+    width: 15.625rem;
+    height: 20rem;
+    background: url('shop/images/T-Shirt_MOHNWIESE_tiny.png') no-repeat center / contain;
+}
+.s-21-block-img-3 {
+    width: 15.625rem;
+    height: 18.75rem;
+    background: url('shop/images/BV_Umschlag_EN-1.jpg') no-repeat center / cover;
+}
+.s-21-block-img-4 {
+    width: 15.625rem;
+    height: 15.625rem;
+    border-radius: 50%;
+    background: url('shop/images/wolfgang-paalen_tiny.jpg') no-repeat center / cover;
+}
+.s-21-block-img-5 {
+    width: 15.625rem;
+    height: 15.625rem;
+    background: url('shop/images/TalkingHeads_Cover.jpg') no-repeat top / cover;
+}
+.s-21-block-img-6 {
+    width: 23.75rem;
+    height: 21.875rem;
+    border-radius: 0;
+    background: url('shop/images/Dürerzeit-österreich-am-tor-zur-renaissance_tiny.jpg') no-repeat center / cover;
+}
+.s-21-block-img-7 {
+    width: 23.75rem;
+    height: 21.875rem;
+    /* border-radius: 0 50% 0 0; */
+    background: url('shop/images/marc-adrian-werkverzeichnis-und-monografie.jpg') no-repeat bottom / cover;
+}
+.s-21-block-img-8 {
+    width: 15.625rem;
+    height: 15.625rem;
+    background: url('shop/images/Alois_Mosbacher_Palinops_Cover.jpg') no-repeat top / cover;
+}
+.s-21-block-img-9 {
+    width: 15.625rem;
+    height: 15.625rem;
+    background: url('shop/images/Ferdinand-georg-waldmüller-eng.jpg') no-repeat top / cover;
+}
+.s-21-block-img-10 {
+    width: 15.625rem;
+    height: 15.625rem;
+    background: url('shop/images/SHOP_ORIGAMI11.jpg') no-repeat center / cover;
+}
+.s-21-block-img-11 {
+    width: 15.625rem;
+    height: 15.625rem;
+    background: url('shop/images/Architekturfuehrer_Cover_RU.jpg') no-repeat top / cover;
+}
+.s-21-block-img-12 {
+    width: 23.75rem;
+    height: 21.875rem;
+    border-radius: 0;
+    background: url('shop/images/say-it-with-flowers_tiny.jpg') no-repeat top / cover;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Страница товара. */
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Корзина. */
+.section-22 {
+    width: 100%;
+    height: auto;
+    margin-top: 6.25rem;
+    margin-bottom: 9.688rem;
+}
+.section-22-container {
+    /* display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr auto auto auto;
+    column-gap: 55px;
+    row-gap: 35px;
+    justify-content: start;
+    align-content: end; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.section-22-block-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: auto;
+    column-gap: 2.188rem;
+    justify-items: flex-start;
+    align-items: flex-start;
+    display: grid;
+    width: 100%;
+    height: auto;
+}
+.s-22-cart-left {
+    width: 100%;
+    height: auto;
+}
+.s-22-cart-items {
+    width: 100%;
+    height: auto;
+}
+
+.s-22-cart-right {
+    width: 100%;
+    height: auto;
+    margin-top: -20%;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Подвал. */
+footer {
+    width: 100%;
+    height: auto;
+    padding: 6.25rem 0 0.625rem 0;
+}
+.a-footer-red-line {
+    font-size: 0.625rem;
+    line-height: 0.688rem;
+    letter-spacing: 0rem;
+    text-decoration: none;
+    color: #7f7f7f;
+}
+.a-footer-red-line:hover {
+    font-family: Europa Bold;
+    font-weight: bold;
+    letter-spacing: -0.013rem;
+    color: #ffffff;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+.a-footer-red-line:active {
+    font-family: Europa Bold;
+    font-weight: bold;
+    letter-spacing: -0.006rem;
+    color: #ffffff;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+
+/* CSS hack для Chrome. */
+/* @media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .a-footer-red-line:hover {
+        font-weight: bold;
+        letter-spacing: 0px;
+        color: #ffffff;
+        border-bottom: 2px solid #E52329;
+        padding-bottom: 5px;
+    }
+} */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    gap: 1.875rem;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 6.25rem;
+}
+.footer-left {
+    width: 21.875rem;
+    height: auto;
+}
+
+/* Подписка на новости. */
+.footer-email {
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+    height: 2.188rem;
+    margin-top: 1.875rem;
+}
+.input-news-email {
+    /* Выравниваем через position. */
+    position: relative;
+    z-index: 50;
+    width: 16.875rem;
+    height: 2.188rem;
+    background-color: #000000;
+    border: 0.063rem solid #7f7f7f;
+    padding: 0.625rem;
+}
+.input-news-email:focus {
+    color: #000000;
+    background-color: #ffffff;
+    border: 0.063rem solid #ffffff;
+    outline: none;
+}
+.input-news-email::placeholder {
+    opacity: 60%;
+}
+.input-news-submit {
+    position: absolute;
+    z-index: 60;
+    display: inline;
+    width: 2.188rem;
+    height: 2.188rem;
+    background-color: #E52329;
+    background-image: url('images/pics/arrow_ogg_.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% auto;
+    object-fit: cover;
+    outline: none;
+    border: 0.063rem solid #7f7f7f;
+    margin: 0 0 0 -0.313rem;
+}
+.input-news-submit:hover {
+    border: 0.063rem solid #ffffff;
+}
+.input-news-submit:active {
+    border: 0.125rem solid #ffffff;
+}
+
+.footer-right {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    justify-items: flex-start;
+    align-items: flex-start;
+    gap: 0rem;
+    width: auto;
+    height: auto;
+}
+.f-right-col-block {
+    width: 5.313rem;
+    height: 1.25rem;
+}
+.f-right-1col {
+    width: 9.375rem;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.f-right-2col {
+    width: 10.625rem;
+    height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.f-right-3col {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    width: 0.938rem;
+    height: auto;
+}
+.f-right-cont {
+    background-color: #000000;
+    margin-bottom: 0.938rem;
+}
+.footer-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Делаем белым цветом логотипы соц. сетей.s */
+    filter: brightness(0) invert(1);
+}
+.footer-img:hover {
+    /* https://codepen.io/sosuke/pen/Pjoqqp */
+    filter: invert(17%) sepia(98%) saturate(3371%) hue-rotate(348deg) brightness(94%) contrast(91%);
+    transform: translate(0.156rem, 0.156rem);
+}
+
+/* Дополнительная информация. */
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    /* display: grid;
+    grid-template-columns: 30px 30px 70px 50px 50px 70px 30px 1fr 100px;
+    grid-template-rows: auto;
+    justify-items: space-between;
+    align-items: center;
+    gap: 15px; */
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+.footer-bottom a {
+    color: #7f7f7f;
+}
+.f-bottom-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+}
+.f-bottom-right {
+    width: 40%;
+    height: auto;
+}
+
+/* Подвал чёрный на белом. */
+.footer-black-on-white {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    padding: 6.25rem 0 0.625rem 0;
+}
+.footer-black-on-white h3 {
+    color: #ffffff;
+}
+
+.a-footer-red-line-bonw {
+    letter-spacing: 0rem;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+.a-footer-red-line-bonw:hover {
+    font-family: Europa Bold;
+    font-weight: bold;
+    letter-spacing: -0.013rem;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+.a-footer-red-line-bonw:active {
+    font-family: Europa Bold;
+    font-weight: bold;
+    letter-spacing: -0.019rem;
+    color: #E52329;
+    border-bottom: 0.125rem solid #E52329;
+    padding-bottom: 0.313rem;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* Кнопка вверх. */
+.btn-up {
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.438rem;
+    height: 3.438rem;
+    border: 0.063rem solid #c1c1c1;
+    background-color: #E52329;
+    right: 50%;
+    bottom: 0;
+    cursor: pointer;
+}
+.btn-up::before {
+    content: "";
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url('images/pics/arrow_ogg_top.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70% auto;
+    object-fit: cover;
+}
+.btn-up_hide {
+    display: none;
+}
